@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: radial-gradient(circle farthest-corner at 100px 50px, lightsteelblue, plum);
+    border-bottom: 1px solid lightgrey;
+}
+.menu_list{
+    display: flex;
+    list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-link{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #2F281E;
+    text-decoration: none;
+    margin-right: 50px;
+
+}
+.list-link:hover{
+    color: #0000ff;
+    transition: all 0.2s;
+    text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-nav{
+    margin-left: 52px;
+    margin-right: 13px;
+}
+.user-nav_link{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0000ff;
+    padding: 11px 23px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.user-nav_link:hover{
+    background-color: mediumpurple;
+    color: #FFFFFF;
+    border-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user-nav_link + .user-nav_link{
+    margin-left: 14px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.second_title{
+    text-align: center;
+    color: #0000ff;
+    font-size: 42px;
+    font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first_tool{
+    display: flex;
+    justify-content: space-between;
+    margin: 180px auto;
+    max-width: 1100px;
+}
+
+.blocks{
+    text-align: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.tool_img{
+    width: 150px;
+    height: 150px;
+}
+
+.tool_title{
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: #0000ff;
+    margin: 15px;
+}
+
+.tool_text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
 }
